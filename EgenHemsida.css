@@ -4,7 +4,7 @@ body{
 .meny{
     grid-area: meny;
     background-color: blanchedalmond;
-    height: 80px;
+    height: 100px;
     width: 90%;
     display: flex;
     align-items: center;
@@ -40,24 +40,21 @@ padding: 10px 30px;
     text-align: center;
 }
 .grid{
-    margin: 5rem auto;
-    /*avståndet uppifrån*/
     width: 100%;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 47% 47%;
     /*Avstånd för varje column*/
     grid-auto-flow: column;
     /*kolumn eller rad*/
     gap: 1.5em;
-text-align: center;
+    text-align: center;
 }
 .bilder{
-margin:5rem auto;
+    margin:5rem auto;
     width: 100%;
-    display: grid;
-    grid-template-columns: 20% 20% 20%;
-    grid-auto-flow: column;
-    gap: 1.5em;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
 }
 .rubrikportfolio{
     text-align: center;
