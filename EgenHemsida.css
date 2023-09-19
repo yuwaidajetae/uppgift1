@@ -1,0 +1,65 @@
+body{
+    background-color: bisque;
+}
+.meny{
+    grid-area: meny;
+    background-color: blanchedalmond;
+    height: 80px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    position: sticky;
+    top: 0%;
+}
+.hemsidansnamn{
+    font-size: 40px;
+}
+.meny ul{
+    list-style: none;
+    /*listan går horisontellt*/
+    display: flex;
+}
+.meny ul li{
+padding: 10px 30px;
+    /*Mellanrum*/
+}
+.meny ul li a{
+    color: black;
+    text-decoration: none;  
+    /*Listans färg och understreck försvinner*/
+}
+.meny ul li a:hover{
+    color: rgb(103, 100, 100);
+    /*Synligheten när man lägger musen på*/
+}
+.intro{
+    width: 100%;
+    top: 50%;
+    text-align: center;
+}
+.grid{
+    margin: 5rem auto;
+    /*avståndet uppifrån*/
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /*Avstånd för varje column*/
+    grid-auto-flow: column;
+    /*kolumn eller rad*/
+    gap: 1.5em;
+text-align: center;
+}
+.bilder{
+margin:5rem auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-auto-flow: column;
+    gap: 1.5em;
+}
+.rubrikportfolio{
+    text-align: center;
+    margin-top: 160px;
+}
