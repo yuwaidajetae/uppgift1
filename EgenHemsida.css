@@ -1,67 +1,58 @@
 body{
-    background-color: bisque;
+  background-color: rgb(249, 211, 165);
 }
-.meny{
-    grid-area: meny;
-    background-color: blanchedalmond;
-    height: 100px;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 5%;
-    position: sticky;
-    top: 0%;
+div {
+  text-align: center;
 }
-.hemsidansnamn{
-    font-size: 40px;
+
+.container {
+  display: grid;
+  grid-template-columns: 20% 60% 20% ;
+  grid-template-areas:
+    "header header header"
+    "left main right"
+    "left bilder right"
+    "left rubrik-bilder right"
+    "left om-mig right"
+    "footer footer footer";
 }
-.meny ul{
-    list-style: none;
-    /*listan går horisontellt*/
-    display: flex;
+
+header {
+  grid-area: header;
+  position: sticky;
+  top: 0px;
+  background-color: blanchedalmond;
+  text-align: center;
 }
-.meny ul li{
-padding: 10px 30px;
-    /*Mellanrum*/
+#bilder{
+  display: flex;
+  justify-content: center;
 }
-.meny ul li a{
-    color: black;
-    text-decoration: none;  
-    /*Listans färg och understreck försvinner*/
+#bilder img{
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
 }
-.meny ul li a:hover{
-    color: rgb(103, 100, 100);
-    /*Synligheten när man lägger musen på*/
+
+.om-mig{
+  display: grid;
 }
-.intro{
-    width: 100%;
-    top: 50%;
-    text-align: center;
+.left {
+  grid-area: left;
+  background-color: blanchedalmond;
 }
-.grid{
-    width: 100%;
-    display: grid;
-    /*Avstånd för varje column*/
-    grid-auto-flow: column;
-    /*kolumn eller rad*/
-    grid-template-columns: 25% 25% 25%;
-    gap: 1.5em;
-    text-align: center;
-    background-color: rgb(216, 231, 245);
+
+main {
+  grid-area: main;
 }
-.bilder{
-    margin:5rem auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    column-gap: 20px;
+
+.right {
+  grid-area: right;
+  background-color:blanchedalmond;
 }
-img{
-    width: 200px;
-    height: 300px;
-}
-.rubrikportfolio{
-    text-align: center;
-    margin-top: 90px;
+
+.footer {
+  grid-area: footer;
+  background-color: grey;
+  height: 90px;
 }
