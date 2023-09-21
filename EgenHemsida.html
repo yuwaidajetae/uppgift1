@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yuwaida Jetae</title>
   <link rel="stylesheet" href="EgenHemsida.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--detta är källan så att ikoner på min footer syns-->
 </head>
 <body>
   <div class="container">
 <header><h1>Yuwaida Jetae</h1></header>
 <div class="main">
-  <h1>Välkommen till min Portfolio!</h1>
+  <h1>Välkommen till min hemsida!</h1>
   <h2>Hoppas du får en trevlig lässtund.</h2>
 </div>
 <div class="rubrik-bilder">
   <h1>Portfolio</h1>
-  <h3>Här är tre bilder en bild på mig, den andra bilden är från den senaste resa och den sista är en shoppingmall</h3>
-</div>
+  <h3>Här ser vi tre bilder tagna av mig. <br>En bild på mig, den andra bilden är från den senaste resan och den sista är den senaste stora shoppingmall jag var senast i.</h3>
+</div><!--Jag använder mig utav <br> för att göra text rad byte-->
 <div id="bilder">
   <img src="selfiebild.jpg" alt="selfiebild">
   <img src="solbild.jpg" alt="semesterbild">
@@ -24,21 +26,46 @@
 </div>
 <div class="om-mig">
   <h1>Om mig</h1>
-  <p>Jag heter Yuwaida Jetae och är 27år. Det här är mitt första student år som frontendutvecklare inriktning Webbsäkerhet. Det ska bli en spännande resa. Jag är precis nygift och bor i Ursvik, Sundbyberg med min man. Jag är uppvuxen i Hjulsta med mina två bröder. Jag har i mina tidigare erfarenhet arbetat mycket inom säkerhetsbranschen, bl.a. som flygplatskontrollant, väktare och även passhandläggare för polisen. Nu strävar jag efter mina drömmar och mål, att få möjligheten arbeta med något som handlar om tekniken, design och säkerhet, ett plus på kanten är att förmodligen hitta något arbete där man inte är så platsbunden.</p>
+  <p>Jag heter Yuwaida Jetae och är 27år. Det här är mitt första student år som frontendutvecklare inriktning Webbsäkerhet.<br>Det ska bli en spännande resa. Jag är precis nygift och bor i Ursvik, Sundbyberg med min man. Jag är uppvuxen i Hjulsta med mina två bröder. <br>Jag har i mina tidigare erfarenhet arbetat mycket inom säkerhetsbranschen, bl.a. som flygplatskontrollant, väktare och även passhandläggare hos polisen. <br> Nu strävar jag efter mina drömmar och mål, att få möjligheten arbeta med något som handlar om tekniken, design och säkerhet. <br> Målet är att förmodligen hitta något arbete där man inte är så platsbunden.</p>
   <h1>Mina intressen</h1>
-  <p>Jag har inte direkta intressen så men jag älskar att resa och upptäcka olika kulturer, träffa andra människor, olika livsstilar. Jag är en person som gillar att växa och utvecklas som person och det tycker jag att jag får ut med mina resor.</p>
+  <p>Jag har inte direkta intressen så men jag älskar att resa och upptäcka olika kulturer, träffa andra människor, olika livsstilar.<br>Jag är en person som gillar att växa och utvecklas som person och det tycker jag att jag får ut med mina resor.</p>
   <h1>Mina mål</h1>
-  <p>Att en dag kunna vara ekonomiskt frihet och resa världen runt med min familj och nära och kära</p>
+  <p>Att en dag kunna vara ekonomiskt frihet och resa världen runt med min familj och nära och kära.</p>
 </div>
+<!--min lista (meny listan är länkade till mina andra html) då när man klickar på listan så kommer man just till det ämnet-->
     <div class="left">    
       <ul>
-      <li>Hem</li>
-      <li>Portfolio</li>
-      <li>Om mig</li>
-      <li>Kontakt</li>
-    </ul></div>
-    <div class="right">Detta är högerspalt</div>
-    <div class="footer">Detta är en footer</div>
+      <li><a href="">Hem</a></li>
+      <li><a href="Portfolio.html">Portfolio</a></li>
+      <li><a href="Om-mig.html">Om Mig</a></li>
+      <li><a href="Kontakt.html">Kontakt</a></li>
+    </ul>
+    <!--här använder jag en onumrerad lista med länkar för att skapa menyflik. det spelade egentligen ingen roll vilken jag tog då jag tog bort prickarna i CSS-->
   </div>
+    <div class="right">
+      <h4>Besök gärna min Github:</h4>
+      <a href="https://github.com/yuwaidajetae/uppgift1.git">Klicka här!</a>
+    </div>
+    <div class="footer">
+      <h4>Vid Kontakt:</h4>
+      <form>
+        <label for="förnamn">Förnamn:</label><br>
+        <input type="text" id="förnamn" name="förnamn"><br>
+        <label for="efternamn">Efternamn:</label><br>
+        <input type="text" id="efternamn" name="efternamn"><br>
+        <label for="mailadress">Emailadress:</label><br>
+        <input type="text" id="mailadress" name="mailadress"><br>
+        <label for="meddelande">Skriv ett meddelande:</label><br>
+        <input type="text" id="meddelande" name="meddelande"><br><br>
+        <input type="submit" value="Skicka">
+      </form>
+      <!--detta är et formulär som man ska fylla i vid kontakt-->
+      <a href="https://www.facebook.com/" class="fa fa-facebook-official"></a>
+      <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+      <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+      <a href="https://www.eniro.se/vem+ringde" class="fa fa-phone"></a>
+      <!--detta är en footer och jag har lagt in ikoner som länkar som då ska skapa en footer-look.-->
+  </div>
+</div>
 </body>
 </html>
